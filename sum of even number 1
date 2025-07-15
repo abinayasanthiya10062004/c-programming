@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int a,b,i,sum=0;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    if(a>0 && b>0 && a<30 && b<30 && a<b)
+    {
+        for(i=a;i<=b;i++)
+        {
+            if(i%2==0)
+            {
+                sum=sum+i;
+            }
+        }
+        printf("%d",sum);
+    }
+    else
+    {
+        printf("Invalid Input");
+    }
+    return 0;
+}
