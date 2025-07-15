@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+        int a;
+    scanf("%d",&a);
+    printf("Enter a number\n");
+    printf("%d\n",a);
+    int count=0;
+    while(a>1)
+    {
+        count++;
+        if(a%2==0)
+        {
+            a=a/2;
+        }
+        else
+        {
+            a=(3*a)+1;
+        }
+        printf("%d\n",a);
+    }
+    printf("count:%d",count);
+    return 0;
+}
